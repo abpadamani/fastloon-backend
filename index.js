@@ -4,6 +4,8 @@ const app = e()
 
 const authApi = require("./routes/auth")
 
+const port = process.env.PORT || 8080
+
 // body parser
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(e.json())
@@ -37,8 +39,8 @@ mainRouter.use((req, res) => {
 app.use("/api", mainRouter)
 
 // app listen on 8080
-app.listen("8080", () => {
-    console.log("app running on port 8080");
+app.listen(port, () => {
+    console.log(`app running on port ${port}`);
 })
 
 

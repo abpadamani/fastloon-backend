@@ -1,0 +1,9 @@
+{
+  "name": "fastloon-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:abpadamani/fastloon-backend.git",
+  "author": "dparthka <parthka.2005@gmail.com>",
+  "license": "MIT",
+  "private": false
+}

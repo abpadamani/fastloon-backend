@@ -11,5 +11,8 @@
     "express": "^4.18.2",
     "mongoos": "^0.0.1-security",
     "twilio": "^3.83.0"
+  },
+  "scripts": {
+    "start": "node index.js"
   }
 }

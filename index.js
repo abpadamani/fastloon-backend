@@ -27,6 +27,7 @@ mainRouter.use("/auth", authApi)
 
 // 404 error
 mainRouter.use((req, res) => {
+    res.status(404)
     res.send({
         status: false,
         massage: "API Not Found"

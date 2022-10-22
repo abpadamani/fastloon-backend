@@ -3,6 +3,7 @@ var bodyParser = require('body-parser')
 const app = e()
 
 const authApi = require("./routes/auth")
+const profileApi = require("./routes/profile")
 
 const port = process.env.PORT || 8080
 
@@ -24,6 +25,8 @@ mainRouter.use((req, res, next) => {
 
 // set auth api
 mainRouter.use("/auth", authApi)
+// set profile api
+mainRouter.use("/profile", profileApi)
 
 // 404 error
 mainRouter.use((req, res) => {
